@@ -5,23 +5,23 @@
 make
 ```
 
-# generate vpn.key
+## generate vpn.key
 ```
 dd if=/dev/urandom of=vpn.key count=1 bs=32
 ```
 
-# print vpn.key
+## print vpn.key
 ```
 base64 < vpn.key
 echo 'HK940OkWcFqSmZXnCQ1w6jhQMZm0fZoEhQOOpzJ/l3w=' | base64 --decode > vpn.key
 ```
 
-# Example on how to use server
+## Example on how to use server
 ```
 sudo ./vpn server vpn.key auto 1959
 ```
 
-# Example on how to use client
+## Example on how to use client
 ```
 sudo ./vpn client vpn.key 34.216.127.34 1959
 ```
