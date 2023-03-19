@@ -10,7 +10,7 @@ make
 dd if=/dev/urandom of=vpn.key count=1 bs=32
 ```
 
-#print vpn.key
+# print vpn.key
 ```
 base64 < vpn.key
 echo 'HK940OkWcFqSmZXnCQ1w6jhQMZm0fZoEhQOOpzJ/l3w=' | base64 --decode > vpn.key
